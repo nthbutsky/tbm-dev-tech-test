@@ -61,7 +61,7 @@ function sceneCan() {
         duration: 1,
         x: "100%",
         ease: "sine.out",
-        delay: 3,
+        delay: 2.5,
       },
     );
   return tl;
@@ -250,7 +250,7 @@ function sceneLogo() {
 onMounted(() => {
   gsap.timeline()
     .add(sceneLiterally()).delay(1)
-    .add(sceneCan(), "-=5.5")
+    .add(sceneCan(), "-=5")
     .add(sceneSparkle(), "-=4.5")
     .add(sceneLimited(), "-=8")
     .add(sceneNow(), "-=7.5")
@@ -263,16 +263,56 @@ onMounted(() => {
 <template>
   <div class="container">
     <div class="coke-banner">
-      <img ref="canRef" class="coke-banner__coke-can" src="@/assets/can.png" />
-      <img ref="literallyRef" class="coke-banner__text-literally" src="@/assets/literally.png" />
-      <img ref="limitedRef" class="coke-banner__text-limited" src="@/assets/limited.png" />
-      <img ref="nowRef" class="coke-banner__text-now" src="@/assets/now.png" />
-      <img ref="inRef" class="coke-banner__text-in" src="@/assets/in.png" />
-      <img ref="storeRef" class="coke-banner__text-store" src="@/assets/store.png" />
-      <img ref="logoRef" class="coke-banner__logo" src="@/assets/logo.png" />
-      <img ref="sparkle1Ref" class="coke-banner__sparkle-1" src="@/assets/sparkle_1.png" />
-      <img ref="sparkle2Ref" class="coke-banner__sparkle-2" src="@/assets/sparkle_2.png" />
-      <img ref="sparkle3Ref" class="coke-banner__sparkle-3" src="@/assets/sparkle_2.png" />
+      <img 
+        ref="canRef" 
+        class="coke-banner__coke-can" 
+        src="@/assets/can.png" 
+      />
+      <img 
+        ref="literallyRef" 
+        class="coke-banner__text-literally" 
+        src="@/assets/literally.png"
+      />
+      <img 
+        ref="limitedRef" 
+        class="coke-banner__text-limited" 
+        src="@/assets/limited.png"
+      />
+      <img 
+        ref="nowRef" 
+        class="coke-banner__text-now" 
+        src="@/assets/now.png"
+      />
+      <img
+        ref="inRef" 
+        class="coke-banner__text-in" 
+        src="@/assets/in.png"
+      />
+      <img 
+        ref="storeRef" 
+        class="coke-banner__text-store" 
+        src="@/assets/store.png"
+      />
+      <img 
+        ref="logoRef" 
+        class="coke-banner__logo" 
+        src="@/assets/logo.png"
+      />
+      <img 
+        ref="sparkle1Ref" 
+        class="coke-banner__sparkle-1" 
+        src="@/assets/sparkle_1.png"
+      />
+      <img 
+        ref="sparkle2Ref" 
+        class="coke-banner__sparkle-2" 
+        src="@/assets/sparkle_2.png"
+      />
+      <img 
+        ref="sparkle3Ref" 
+        class="coke-banner__sparkle-3" 
+        src="@/assets/sparkle_2.png"
+      />
     </div>
   </div>
 </template>
